@@ -1,0 +1,37 @@
+.customSelector .css-1s2u09g-control {
+  background-color: #fafafa !important;
+  height: 42px !important;
+  border: 1px solid #e8e8e8;
+}
+.customSelector .css-1okebmr-indicatorSeparator {
+  display: none !important;
+}
+
+.customSelector svg {
+  color: #842d72 !important;
+}
+
+.customSelector .css-b62m3t-container {
+  font-size: 14px !important;
+}
+.hide_dropdown_icon.customSelector svg {
+  display: none !important;
+}
+.hide_dropdown_icon.customSelector
+  > div:nth-child(1)
+  div:first-child
+  div:nth-child(2)
+  svg {
+  display: block !important;
+}
+.customSelector div:nth-child(4) {
+  z-index: 9999;
+}
+@media screen and (max-width: 767px) {
+  .customSelector .css-1s2u09g-control {
+    background-color: transparent !important;
+    height: 42px !important;
+    border: none;
+    border-radius: 100px;
+  }
+}

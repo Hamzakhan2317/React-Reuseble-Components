@@ -1,0 +1,108 @@
+.date_value {
+  margin-left: 10px;
+}
+.schedularDatepicker .react-datepicker__current-month {
+  position: absolute !important;
+  left: 32px !important;
+  top: 7px !important;
+}
+.schedularDatepicker .react-datepicker__header__dropdown {
+  position: absolute !important;
+  right: 35px !important;
+  top: 2px !important;
+}
+.schedularDatepicker .react-datepicker__navigation-icon {
+  top: 12% !important;
+  right: 0px !important;
+}
+.schedularDatepicker .react-datepicker__navigation-icon::before {
+  top: 4px !important;
+}
+.react-datepicker__year-option .react-datepicker__navigation::before {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  content: "";
+  display: block;
+  height: 9px;
+  position: absolute;
+  width: 9px;
+  top: 12px;
+  left: 10px;
+  transform: rotateZ(315deg);
+}
+.react-datepicker__year-option
+  .react-datepicker__navigation--years-previous::before {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  content: "";
+  display: block;
+  height: 9px;
+  position: absolute;
+  width: 9px;
+  top: 9px;
+  left: 10px;
+  transform: rotateZ(135deg);
+}
+.react-datepicker__navigation {
+  height: 28px !important;
+  width: 28px !important;
+}
+.react-datepicker__year-option:hover,
+.react-datepicker__month-option:hover,
+.react-datepicker__month-year-option:hover {
+  background-color: #842d72 !important;
+  color: #fff !important;
+}
+.react-datepicker__month-container {
+  border-bottom: 4px solid #842d72;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.schedularDatepicker .react-datepicker__year-select {
+  border: none !important;
+  background: aliceblue !important;
+  padding: 2px;
+  position: absolute;
+  top: 4px;
+  right: -3px;
+}
+.schedularDatepicker .react-datepicker__year-select option {
+  background: white !important;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .datepicker-custom-input {
+    text-align: center !important;
+  }
+  .schedularDatepicker .react-datepicker__navigation-icon::before {
+    top: 4px !important;
+  }
+  .react-datepicker__year-option .react-datepicker__navigation::before {
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 3px 3px 0 0;
+    content: "";
+    display: block;
+    height: 9px;
+    position: absolute;
+    width: 9px;
+    top: 12px;
+    left: 10px;
+    transform: rotateZ(320deg);
+  }
+  .react-datepicker__year-option
+    .react-datepicker__navigation--years-previous::before {
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 3px 3px 0 0;
+    content: "";
+    display: block;
+    height: 9px;
+    position: absolute;
+    width: 9px;
+    top: 12px;
+    left: 10px;
+    transform: rotateZ(135deg);
+  }
+}

@@ -1,0 +1,266 @@
+.tableWrapper::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+  padding-left: 5px;
+}
+
+.tableWrapper {
+  position: relative;
+  scrollbar-width: thin;
+  height: 360px;
+}
+
+.tableOverlay {
+  position: absolute;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.4);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.tableContainer .tableWrapper table tbody tr td:hover::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  padding-left: 5px;
+}
+.tableContainer .tableWrapper {
+  padding-bottom: 2px;
+  max-height: 380px;
+  overflow: auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.tableContainer .tableWrapper table {
+  border-collapse: unset;
+  border-spacing: 0;
+  /* border-radius: 5px;
+  border: 1px solid #ccc; */
+  /* height: 360px;
+  max-height: 360px; */
+}
+
+.tableContainer {
+  background-color: #fff;
+}
+.tableContainer .tableWrapper table thead {
+  position: sticky;
+  top: 0px;
+  background-color: #ffeefb;
+  border: 1px solid #cccccc !important;
+  z-index: 99;
+  height: 42px;
+}
+.tableContainer .tableWrapper table thead tr {
+  height: 50px;
+  cursor: pointer;
+}
+.tableContainer .tableWrapper table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.tableContainer .tableWrapper table thead tr th:last-child {
+  border-right: none;
+  margin-top: 7px;
+}
+.tableContainer .tableWrapper table thead tr th {
+  border-bottom: 1px solid #cccccc;
+  text-align: left;
+  padding: 0px 11px;
+  font-size: 14px;
+  font-weight: 600;
+  width: auto;
+  cursor: pointer;
+}
+
+.tableContainer .tableWrapper table thead tr th > div {
+  padding: 5px;
+  /* margin: 0 auto; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tableContainer .tableWrapper table tbody tr td:last-child > div {
+  margin-top: 3px;
+}
+
+.tableContainer {
+  position: relative;
+}
+
+.tableContainer .pagination {
+  background-color: #fff;
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  padding: 1% 0%;
+}
+
+.tableContainer .tableWrapper table {
+  width: 100%;
+}
+.reactTable table tbody tr {
+  height: auto;
+  max-height: initial;
+}
+.reactTable table tbody tr td {
+  /* border-bottom: 1px solid #cccccc !important; */
+  text-align: left;
+  word-break: break-all;
+  color: #666666;
+  font-size: 14px;
+  overflow-y: hidden !important;
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+}
+
+.reactTable table tbody tr {
+  border-bottom: 1px solid #cccccc !important;
+}
+.reactTable table tbody tr:last-child {
+  border-bottom: none !important;
+}
+
+.reactTable table tbody tr td div > div {
+  justify-content: flex-start !important;
+}
+.reactTable .pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 0;
+  align-items: center;
+}
+.reactTable .tableTopFilters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% 0;
+}
+.reactTable .pagination button {
+  border: 1px solid #842d72;
+  font-size: 18px;
+  border-radius: 99px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 3px;
+  color: #842d72;
+
+  background-color: transparent;
+}
+
+.reactTable .pagination button:disabled {
+  opacity: 0.5;
+}
+.reactTable .showFilter {
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+  border: 1px solid gray;
+}
+.reactTable .pageFilters {
+  display: flex;
+  align-items: center;
+}
+
+.reactTable .pagination button:hover {
+  color: #fff;
+  border-color: #842d72;
+  background-color: #842d72;
+}
+.reactTable .gotoPage {
+  padding: 6.5px 5px;
+  border-radius: 5px;
+  border: 1px solid #cccccc !important;
+  width: 75px !important;
+  text-align: center;
+}
+.search_filter {
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+  padding-left: 15px;
+  padding-right: 30px;
+  border-radius: 5px;
+  border: 1px solid #cccccc !important;
+  width: 100%;
+}
+input:focus {
+  outline: none;
+}
+.reactTable .pageFilters select {
+  border: 1px solid #cccccc !important;
+  background: #fff !important;
+  height: 40px;
+}
+.reactTable .pageFilters select::after {
+  padding-right: 15px !important;
+}
+#columnsContainer::-webkit-scrollbar {
+  width: 7px;
+}
+#columnsContainer {
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  width: max-content;
+  right: 0px;
+  z-index: 990;
+  overflow-y: auto;
+  max-height: 300px;
+  scrollbar-width: thin;
+}
+
+#threeDots {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  bottom: 15px;
+  width: 20px;
+}
+.reactTable #columnsContainer input:checked[type="checkbox"] {
+  background: #842d72 !important;
+  border-color: #842d72 !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin-top: 0.25em !important;
+  vertical-align: top !important;
+  background-color: unset !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 2px solid #842d72 !important;
+  border-radius: 3px !important;
+  cursor: pointer;
+}
+#columnsContainer > li {
+  padding: 5px 0;
+}
+.tableContainer .tableWrapper table tbody tr td:hover {
+  overflow: auto !important;
+}
+.rowEffect {
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+}
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .reactTable table {
+    table-layout: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tableContainer .pagination {
+    padding: unset !important;
+  }
+}

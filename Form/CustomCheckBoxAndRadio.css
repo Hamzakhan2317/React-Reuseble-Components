@@ -1,0 +1,27 @@
+.input_checkbox .form-check-label {
+  color: #842d72;
+}
+.input_checkbox .form-check-input:checked {
+  background-color: #842d72 !important;
+  border-color: #842d72 !important;
+}
+.input_checkbox .form-check-input:focus {
+  box-shadow: none !important;
+  border-color: #842d72 !important;
+}
+.input_checkbox .form-check-input {
+  width: 16px !important;
+  height: 16px !important;
+  margin-top: 0.25em !important;
+  vertical-align: top !important;
+  background-color: unset !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 2px solid #842d72 !important;
+  border-radius: 3px !important;
+  cursor: pointer;
+}
+.emr_custom_radio .input_checkbox input {
+  border-radius: 100px !important;
+}
